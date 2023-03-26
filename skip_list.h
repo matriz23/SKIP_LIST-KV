@@ -75,8 +75,8 @@ private:
     int length;                  // 跳表的长度
     static const int MAXL = 32;  // 跳表的最大层数
     static const int P = 4;      // P 和 S 是用于随机生成新节点层数的常数
-    static const int S = 0xFFFF; // P 和 S 是用于随机生成新节点层数的常数
-    static const int PS = S / P; // P 和 S 是用于随机生成新节点层数的常数
+    static const int S = 0xFFFF; 
+    static const int PS = S / P; 
     static const int INVALID = INT_MAX; // 表示无效的键值
     node* head, * tail;          // 指向跳表头尾的指针
     Comp less;                   // 用于比较键值的函数对象
